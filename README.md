@@ -1,67 +1,102 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
-
-![blueprint](images/blueprint.png)
-
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
-
-## Repository Contents
-
-Below is a list of the contents of this repository - instructions for using them are in the next section.
-
-- `README.md`: The README for this repo explaining its contents - you're reading it now.
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project.
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions.
-- `create_sql_database.ipynb`: A notebook for creating an SQL database if you would prefer to use SQL for this project.
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy).
-- `data` folder: A folder for the data you reference with your code.
-- `src` folder: A folder containing custom functions.
-- `images` folder: A folder for the images you reference in your files .
-- `.gitignore`: A hidden file that tells git to not track certain files and folders.
-
-## Instructions For Using This Repository
-
-### Fork This Repository
-
-1. Fork this repository to your personal account
-   - In GitHub, go to this repository and click the "Fork" button in the upper right.
-   
-2. Change the name of your fork of this repo to a _descriptive_ name of your choosing
-   - In GitHub, go to your fork of this repo -> "Settings" -> "Options" -> "Repository Name" -> "Rename"
-   - Make the name descriptive, since potential employers will read it. Ex: "Microsoft-Movie-Analysis" is better than "Project-1"
-
-3. Use `git clone` to clone your fork of this repo to your local computer
-
-### Work In Your Fork Of This Repository
-
-- Work in the repo clone that you created on your local machine
-- Start writing and coding in the Jupyter Notebook `dsc-phase1-project-template.ipynb`
-- Fill in the README template in `TEMPLATE_README.md`
-- Use `git add`, `git commit`, and `git push` often to update your repo in GitHub
-   - For a refresher on how to do this and why it's important, review Topic 2: Bash and Git
-
-### Use The Slide Template
-
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
-
-### Tidy Up Your Project
-
-- Change the file name of the Jupyter Notebook (`dsc-phase1-project-template.ipynb`) to something more descriptive
-- Save an appropriately-named PDF version of your slide deck to the repository
-- Rename the template readme you've been working in by running `git mv TEMPLATE_README.md README.md`
-- Delete unnecessary files from the repo using `git rm`
-   - The presentation PDF: `DS_Project_Presentation_Template.pdf`
-   - This README file: `README.md`
-   - Any unused data files in the `data` folder
-   - Any unused images in the `images` folder
-
-### Submit Your Project
-
-To submit your project, please follow the instructions in the [Project Submission & Review](https://learning.flatironschool.com/courses/2085/pages/project-submission-and-review-online?module_item_id=140538) page on Canvas.
+# Movies for Microsoft
+![Alt Text](https://media.giphy.com/media/8lKyuiFprZaj2lC3WN/giphy.gif)
 
 
-### Notes
+**By**: Jinsol Cantrall
+****
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting.
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go.
-- If you would like to use SQL for this project, please open the `create_sql_database.ipynb` notebook, and run the cells. The schema for the database is stored in the images/ folder.
+
+## Overview
+
+What does it mean to be successful in business? How can you measure success? According to Google, 'Success is running a profitable firm that conducts business.' So in order for business to be successful, money is going to be the most important factor to measure the success.
+
+Movies are one of our all time favorite entertainment businesses that have been growing since it was invented. This industry has been known for creating billions of dollars until today. According to the wikipedia, “The worldwide theatrical market had a box office of US$42.2 billion in 2019.”
+
+ In this report, with the datasets from the we will take a closer look at the profitable factors to create a movie.
+
+## Business Problem
+
+Microsoft stakeholders have noticed their competitors creating original video content. In response, Microsoft has decided to create a new movie studio, but they are unfamiliar with the film sector. I have been given several datasets, and are asked to put together a report on the movie industry that will allow Microsoft producers to make informed decisions.
+
+#### "What is a successful film?"
+1. The most **profitable** - money
+2. The most **popular** - ratings
+
+##### Questions to ask:
+* Question 1: Is it profitable to create film? 
+* Question 2: Which genres of movies were popular? 
+* Question 3: Does the large buget movie brings more money? 
+* Question 4: Running time could be a huge factor of popularity of the movie?
+***
+
+## Data
+
+Following datasets are used for analysis.
+
+1. The Numbers (budgets)
+2. iMDB (titles)
+3. iMDB (ratings)
+***
+
+## Methods
+
+Use ELT (Extract Transform Load) method to clean data
+* Import data
+* Apply Functions
+* Group Data
+* Check for duplicates
+* Remove duplicates
+* Recheck for duplicates
+* Create Pivot Tables
+* Deal with missing data (replace or drop)
+
+Data Visualization with Seaborn and Matplotlib
+
+***
+
+
+## Results
+#### Question 1: Is it profitable to create film? 
+- Yes, 72.2% of the movies passed break-even point
+
+![graph1](./visualization/piegraph1.png)
+
+
+#### Question 2: Which genres of movie is popular? 
+- Top 5 genres that were created were Drama, Documentary, Comedy, Thriller, and Horror
+- Top 5 genres that were pouplar were Documentary, History, Biography, Music, and News 
+
+![graph2](./visualization/g2.png)
+
+#### Question 3: Does the large buget movie brings more money? 
+![graph3](./visualization/g3.png)
+
+#### Question 4: Running time could be a huge factor of popularity of the movie 
+- No. It has a very small correlation between popularity and running time
+![graph4](./visualization/g4.png)
+
+Average running time has been increasing over decades.
+
+![graph5](./visualization/g6.png)
+
+
+
+
+
+## Conclusions
+Starting movie business seems not bad. As you can see, most movies(72.2%) made more than the budget. Highest net gross movies are not always the most highest average rate nor most reviewd. As far as genres, Comedy Drama seems like safest bet since both genres are popular genre. 
+
+
+
+## Repository Structure
+
+```
+├── data                                
+├── images                             
+├── Notebooks        
+├── src
+├── Visualization
+├── DS_Project_Presentation.pdf         
+├── Movie Analysis for Microsoft.ipynb   
+└── README.md         
+```
