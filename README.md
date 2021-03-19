@@ -56,24 +56,25 @@ Data Visualization with Seaborn and Matplotlib
 
 
 ## Results
-#### Question 1: Is it profitable to create film? 
+### Question 1: Is it profitable to create film? 
 - Yes, 72.2% of the movies passed break-even point
 
 ![graph1](./visualization/piegraph1.png)
 
 
-#### Question 2: Which genres of movie is popular? 
+### Question 2: Which genres of movie is popular? 
 - Top 5 genres that were created were Drama, Documentary, Comedy, Thriller, and Horror
 - Top 5 genres that were pouplar were Documentary, History, Biography, Music, and News 
 
 ![graph2](./visualization/g2.png)
 
-#### Question 3: Does the large buget movie brings more money? 
+### Question 3: Does the large budget movie brings more money? 
 ![graph3](./visualization/g3.png)
 
-#### Question 4: Running time could be a huge factor of popularity of the movie 
-- No. It has a very small correlation between popularity and running time
+### Question 4: Running time could be a huge factor of popularity of the movie? 
 ![graph4](./visualization/g4.png)
+- No. It has a very small correlation between popularity and running time
+
 
 Average running time has been increasing over decades.
 
@@ -84,8 +85,7 @@ Average running time has been increasing over decades.
 
 
 ## Conclusions
-Starting movie business seems not bad. As you can see, most movies(72.2%) made more than the budget. Highest net gross movies are not always the most highest average rate nor most reviewd. As far as genres, Comedy Drama seems like safest bet since both genres are popular genre. 
-
+Starting movie business seems not bad. As you can see, most movies(72.2%) made more than the budget. Highest net gross movies are not always the most highest average rate nor most reviewed. As far as genres, Comedy Drama seems like safest bet since both genres are popular genre. Comedies, Documentaries and Dramas have a lot of popular movies, in terms of pure numbers. But News, Documentaries and Music have a lot of popular movies, in terms of percentages.
 
 
 ## Repository Structure
